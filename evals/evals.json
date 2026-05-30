@@ -1,0 +1,26 @@
+{
+  "skill_name": "running-coach",
+  "evals": [
+    {
+      "id": 0,
+      "name": "session-review-easy-run-drifted-hard",
+      "prompt": "I just did my 12km easy run this morning - the one you'd asked me to keep HR under 150 on. Can you take a look at the data on Garmin and let me know how I did?",
+      "expected_output": "Pulls the latest Garmin activity, reads splits + HR zones, recognises the second consecutive easy-run-drift pattern (May 17 and May 22), proposes a tightened prescription for Sunday's long run with confirmation request, and appends to the training journal.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "weekly-preview-sunday-evening",
+      "prompt": "Hey can you do a quick recap of what I did this week and let me know what's coming up? I want to make sure I'm clear on Monday onwards.",
+      "expected_output": "Pulls last 7 days of Garmin activities, reads recent journal entries, lists next 7 days of calendar events, produces a structured recap + preview, ends with the constraints question.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "ad-hoc-niggle-pre-parkrun",
+      "prompt": "My right calf has been tight since yesterday's run, kind of dull ache when I press it. I've got parkrun at race effort tomorrow morning. Should I still do it?",
+      "expected_output": "Defaults to caution given the hip surgery history, recommends a specific adjustment (e.g. drop to steady, not race effort), suggests checking calf with light jog first, recommends physio if it persists. Doesn't moralise, doesn't ignore the question, gives a clear actionable recommendation.",
+      "files": []
+    }
+  ]
+}
